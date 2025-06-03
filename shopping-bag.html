@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopping Bag</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&display=swap"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <style>
+      body {
+        font-family: 'Spline Sans', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-[#181115]">
+    <header
+      class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f0f3] px-10 py-3"
+    >
+      <div class="flex items-center gap-8">
+        <div class="flex items-center gap-4 text-[#181115]">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <h2
+            class="text-[#181115] text-lg font-bold leading-tight tracking-[-0.015em]"
+          >
+            Jamile Store
+          </h2>
+        </div>
+        <div class="flex items-center gap-9">
+          <a class="text-[#181115] text-sm font-medium leading-normal" href="#">New Arrivals</a>
+          <a class="text-[#181115] text-sm font-medium leading-normal" href="#">Clothing</a>
+          <a class="text-[#181115] text-sm font-medium leading-normal" href="#">Shoes</a>
+          <a class="text-[#181115] text-sm font-medium leading-normal" href="#">Accessories</a>
+          <a class="text-[#181115] text-sm font-medium leading-normal" href="#">Sale</a>
+        </div>
+      </div>
+      <div class="flex flex-1 justify-end gap-8">
+        <label class="flex flex-col min-w-40 !h-10 max-w-64">
+          <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+            <div
+              class="text-[#88637c] flex border-none bg-[#f4f0f3] items-center justify-center pl-4 rounded-l-lg border-r-0"
+              data-icon="MagnifyingGlass"
+              data-size="24px"
+              data-weight="regular"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                ></path>
+              </svg>
+            </div>
+            <input
+              placeholder="Search"
+              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#181115] focus:outline-0 focus:ring-0 border-none bg-[#f4f0f3] focus:border-none h-full placeholder:text-[#88637c] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+              value=""
+            />
+          </div>
+        </label>
+        <div class="flex gap-2">
+          <button
+            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f4f0f3] text-[#181115] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+          ></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-10">
+      <h1 class="text-3xl font-bold mb-8">Shopping Bag</h1>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 space-y-6" id="product-list"></div>
+
+        <div class="border p-6 rounded-lg bg-[#f9f6f8]">
+          <h2 class="text-xl font-bold mb-4">Order Summary</h2>
+          <div class="text-sm space-y-2">
+            <div class="flex justify-between">
+              <span>Subtotal</span>
+              <span>$<span id="subtotal">0.00</span></span>
+            </div>
+            <div class="flex justify-between">
+              <span>Shipping</span>
+              <span>$<span id="shipping">0.00</span></span>
+            </div>
+            <hr class="my-3 border-[#e5d9e0]" />
+            <div class="flex justify-between font-semibold text-base">
+              <span>Total</span>
+              <span>$<span id="total">0.00</span></span>
+            </div>
+          </div>
+          <button
+            class="w-full mt-6 bg-[#181115] text-white py-3 rounded-lg font-semibold hover:bg-black transition"
+          >
+            Proceed to Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let products = [
+        {
+          id: 1,
+          name: "Classic White Shirt",
+          size: "M",
+          price: 29.99,
+          qty: 1,
+          img: "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=80&q=80",
+        },
+        {
+          id: 2,
+          name: "Denim Jeans",
+          size: "L",
+          price: 49.99,
+          qty: 1,
+          img: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=80&q=80",
+        },
+      ];
+
+      function renderProducts() {
+        const productList = document.getElementById("product-list");
+        productList.innerHTML = "";
+
+        products.forEach((product, index) => {
+          const productDiv = document.createElement("div");
+          productDiv.className = "flex items-center border p-4 rounded-lg gap-4";
+          productDiv.id = `product-${product.id}`;
+
+          productDiv.innerHTML = `
+            <img src="${product.img}" alt="${product.name}" class="w-20 h-20 object-cover rounded-md" />
+            <div class="flex-1">
+              <h3 class="text-lg font-semibold">${product.name}</h3>
+              <p class="text-sm text-[#88637c]">Size: ${product.size}</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button class="w-8 h-8 bg-gray-200 rounded-full text-xl font-bold" data-index="${index}" data-action="decrease">-</button>
+              <span class="w-6 text-center" id="qty-${product.id}">${product.qty}</span>
+              <button class="w-8 h-8 bg-gray-200 rounded-full text-xl font-bold" data-index="${index}" data-action="increase">+</button>
+              <button class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full hover:bg-red-200 transition" aria-label="Remove product" data-index="${index}" data-action="remove">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="w-20 text-right font-bold">$<span id="price-${product.id}">${(product.price * product.qty).toFixed(2)}</span></div>
+          `;
+
+          productList.appendChild(productDiv);
+        });
+
+        productList.querySelectorAll("button").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            const index = Number(e.currentTarget.getAttribute("data-index"));
+            const action = e.currentTarget.getAttribute("data-action");
+
+            if (action === "increase") {
+              products[index].qty++;
+            } else if (action === "decrease") {
+              if (products[index].qty > 1) products[index].qty--;
+            } else if (action === "remove") {
+              products.splice(index, 1);
+            }
+
+            renderProducts();
+            updateSummary();
+          });
+        });
+      }
+
+      function updateSummary() {
+        const subtotal = products.reduce((acc, p) => acc + p.price * p.qty, 0);
+        const shipping = subtotal > 0 ? 5.0 : 0;
+        const tax = subtotal * 0.045;
+        const total = subtotal + shipping + tax;
+
+        document.getElementById("subtotal").textContent = subtotal.toFixed(2);
+        document.getElementById("shipping").textContent = shipping.toFixed(2);
+        document.getElementById("total").textContent = total.toFixed(2);
+      }
+
+      function addProduct(product) {
+        const existing = products.find((p) => p.id === product.id);
+        if (existing) {
+          existing.qty += product.qty;
+        } else {
+          products.push(product);
+        }
+        renderProducts();
+        updateSummary();
+      }
+
+      // Example of using addProduct (you can remove this in production)
+      // addProduct({
+      //   id: 3,
+      //   name: "New Jacket",
+      //   size: "S",
+      //   price: 59.99,
+      //   qty: 1,
+      //   img: "https://images.unsplash.com/photo-1530133532239-4c8f3881a994?auto=format&fit=crop&w=80&q=80",
+      // });
+
+      renderProducts();
+      updateSummary();
+    </script>
+  </body>
+</html>

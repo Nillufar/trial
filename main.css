@@ -1,0 +1,51 @@
+/* Custom CSS for Jamile Store */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff1f2; /* Soft pink from Tailwind bg-pink-50 */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #be185d; /* Tailwind's bg-pink-700 */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .search-bar {
+    margin-right: 0; /* Move to the right corner */
+}
+header .search-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+/* Optional: For alignment or spacing refinements */
+header .flex {
+    flex-wrap: wrap;
+}
+
+.relative.ml-auto.mr-4 {
+    margin-left: auto !important;
+    margin-right: 1rem !important;
+}

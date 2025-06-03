@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jamile Store</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    .font-playfair {
+        font-family: 'Playfair Display', serif;
+    }
+</style>
+</head>
+<body class="bg-pink-50">
+<header class="bg-pink-700 text-white">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+        <h1 class="font-playfair text-3xl font-bold">Jamile Store</h1>
+        <div class="flex items-center space-x-4">
+            <div class="relative">
+                <input class="bg-pink-600 text-white placeholder-pink-300 rounded-full py-1 px-3 text-sm focus:outline-none" placeholder="Search..." type="text"/>
+                <span class="material-icons absolute right-2 top-1/2 transform -translate-y-1/2 text-pink-300">search</span>
+            </div>
+            <a href="favourites.html">
+                <span class="material-icons">favorite_border</span>
+            </a>
+            <a href="shopping-bag.html">
+                <span class="material-icons">shopping_bag</span>
+            </a>
+        </div>
+
+</div>
+</div>
+</header>
+<nav class="bg-white shadow-md">
+<div class="container mx-auto px-4">
+<ul class="flex justify-center space-x-8 py-3 text-sm text-gray-700">
+<li><a class="hover:text-pink-600" href="#">Ko'ylak</a></li>
+<li><a class="hover:text-pink-600" href="#">Kofta</a></li>
+<li><a class="hover:text-pink-600" href="#">Yubka</a></li>
+<li><a class="hover:text-pink-600" href="#">Kostyum</a></li>
+<li><a class="hover:text-pink-600" href="#">Shim</a></li>
+<li><a class="hover:text-pink-600" href="#">Oyoq kiyim</a></li>
+<li><a class="hover:text-pink-600" href="#">Tashqi kiyim</a></li>
+<li><a class="hover:text-pink-600" href="#">Chegirma</a></li>
+</ul>
+</div>
+</nav>
+<section class="bg-gradient-to-r from-pink-100 via-rose-50 to-pink-100 py-10">
+<div class="container mx-auto px-4 flex items-center">
+<div class="w-1/2">
+<p class="text-pink-600 text-lg mb-2"> 40% chegirma</p>
+<h2 class="font-playfair text-5xl font-bold text-gray-800 mb-4">Yangi mavsum kolleksiyasi</h2>
+<p class="text-gray-600 mb-6"> Ayollar modasidagi eng so‘nggi trendlarni kashf eting. Har bir holat uchun sifat va uslub!</p>
+<button class="bg-pink-600 text-white py-2 px-6 rounded-full hover:bg-pink-700 transition duration-300">Xarid qilish</button>
+</div>
+<div class="w-1/2">
+<img alt="Fashion model wearing new collection" class="rounded-lg shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATlToW7Df45nXSlPvpxsHNoBiAp06irNqL_rENu1gS8prz6SuNSEFExM6yjaaYab5xIiY85Ae3bcT_QYsto9NAldb9rnhjeSbzTC3lgKnGGXyTdzx2TMaFGufcx5jHOsm72YcPEA7ZcE-1vdlLHQlJtOxY7HsRDHAO2pyKHsAOJpfjdPwTTT8yDOu05padi9oHQD0ukDc2rxKHssytUzehAi7KjvScjJ9_Z_AmFbyB1RkFzo6JinoE5kX_Xnolrh0MCPa3Wg36aAQ"/>
+</div>
+</div>
+</section>
+<section class="py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 text-center">
+<div>
+<img alt="Dresses category" class="w-24 h-24 mx-auto rounded-full object-cover mb-2 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaTmyjsY1Kmc7w_L2hWooQyLAGNbNLpKgtoTLDqBDi9dIkgNv0qr3Ketsy5Pwe2E2kdybwHK4K1l274HQE5FlFbkbWyeUPoDOXKLpTYTxzEx3Ccj6E9quzb3HKLsbyOHSBhnvZQjetNZrXve95eF_hjRZYvM0bmXDmSdy9dC0NC2ODwu3rvYiuvmbgPBrFfEdBKpKHF2jWgXutJZgsEhVmVgj1BxHTXJOo138r-tdT-bgeqL_MYvPoft1jXUF8azXuNWxr9QVeuyo"/>
+<p class="text-gray-700 font-medium">Ko`ylak</p>
+</div>
+<div>
+<img alt="Tops category" class="w-24 h-24 mx-auto rounded-full object-cover mb-2 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9FNxNMLASh8zzQj8x3Xx2jn06A-9o2hA4nxZYlP5WywaxNfE2PuwgyPxFwihVp5YlJUmPZBWInZYz0lIRSQhDafc05HIQPFYcwqCmmcnRWe-9J-n-VlWpdlgHq2iDNEPMZCVtMnwTl-UZCjDkqH_RNr2XcuVqnGRs62mJFksnf9Wc7TNsF-ULbg8c90C3qJIE9iv3M_hkp1qgGji458sqyF27Om6yetRTIqrybIXIiElJpGtEaBbF0Aw7xrk7ilOfdOZGtVfoR3U"/>
+<p class="text-gray-700 font-medium">Kofta</p>
+</div>
+<div>
+<img alt="Jeans category" class="w-24 h-24 mx-auto rounded-full object-cover mb-2 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpn3Qn8Flg-7yAY0eodY-szJhF_pOp-lYGnpFKKCDY41yrSW3Yu92mZ3_lzB8iCa3M_9cIutFNep5YUXAx15chnFKYslu72HEopHjKBhdZynQPD4OPDk0P9igoKFo61a-QqKG2SgDL4gSPhjSFsU4mEveV8z4Qtfz9er5tpQjS6z1AdgdaMULKjJr43GYABgwi_2V3dy7qBm8-M04kx3sXaCepKtYbb0vPEsnYxbJx593eHHCEjXuvi2155l32EXIwkiQjGtrmLEs"/>
+<p class="text-gray-700 font-medium">Yupka</p>
+</div>
+<div>
+<img alt="Skirts category" class="w-24 h-24 mx-auto rounded-full object-cover mb-2 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF7afjDjngiEgiwmbHBZCQ0-Y-ITD8dMR5xwovD-ILcv1cb--TB5SUvcJWhqGqrJqbTgx2inNdexKJBRYABak0QnzwVZJz6hfh0e7Sk0shfyfej3oOp3bKn6Uk5kYRhG2vWiS-z8H52nJfL3-9vAogARf956iL6yJMHzk6JpekN9PkaBoiom8gMQOjiDsKB1YDOWz6Ycwd16cRYd734wnvq6BK742sUG5ZTv687A1zUhNSXNX3xB_oKh6Rhuz4Eq7DFmNgARjDC5o"/>
+<p class="text-gray-700 font-medium">Kostyum</p>
+</div>
+<div>
+<img alt="Handbags category" class="w-24 h-24 mx-auto rounded-full object-cover mb-2 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKLh4_xaJuHeHluxkYG6CSw0dyYgLxZyBNnhjmaNnfvLKKkDzTCiVKhoCZ9aL9mkGJwUQWNBk73Hix61wY156maHwQlcJiPk40qv4WeEIvED4z6xu_vDMulM_auAwmz4sarYcl_nF8vG1hCFu8p7s1AvJolwAeMXSS6SkTsSDhxGalhbKI7HMNz38-19bkX-F8xcyRJ7pCGmfp4vdPwtp66oNNsgwhdpAThISfUmgn-KSgruV19InhUd-y2kl3QFUFSxn95NmBXAI"/>
+<p class="text-gray-700 font-medium">Shim</p>
+</div>
+<div>
+<img alt="Shoes category" class="w-24 h-24 mx-auto rounded-full object-cover mb-2 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJNNclFqBUTfJRqVgEw2Cqb15hO3twUNREMiXVDbam58QFa-4wl4ZbiGG6qe6gjtwkh8D3erzUmKFSyoWln2dzYsqiGtvdXYWqT2Ts_Sjnl2WyLKT48VxgS5StKdD-LaMZBjU3pgazW_A62-j2QH3hhrjIP_mn8d2xvbSTSjttudFVUXkV1AP3bv-TJN98pRQZVOPuFG4X27JqowS9Ykuz7tVxwafETAL6EVTP8ziFH3XlQdPX7CdHxJc2Z7_9m_Vf-frL9wdA7uM"/>
+<p class="text-gray-700 font-medium">Oyoq kiyim</p>
+</div>
+</div>
+<div class="flex justify-center mt-6">
+<span class="h-2 w-2 bg-pink-600 rounded-full mx-1"></span>
+<span class="h-2 w-2 bg-pink-300 rounded-full mx-1"></span>
+<span class="h-2 w-2 bg-pink-300 rounded-full mx-1"></span>
+</div>
+</div>
+</section>
+<section class="py-12 bg-white">
+<div class="container mx-auto px-4 grid md:grid-cols-2 gap-8">
+<div class="bg-pink-100 rounded-lg p-8 flex items-center shadow-lg">
+<div class="w-2/3">
+<p class="text-pink-600 text-lg">25% Chegirma</p>
+<h3 class="font-playfair text-3xl font-bold text-gray-800 mt-1 mb-3">Zamonaviy yozgi ko‘ylaklar</h3>
+<button class="bg-pink-600 text-white py-2 px-5 rounded-full text-sm hover:bg-pink-700 transition duration-300">Xarid qilish</button>
+</div>
+<div class="w-1/3">
+<img alt="Woman wearing a summer dress" class="rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyoIIeLkNLaVNT6ASZg7LLIJVBO2NhptG4ad4BJOGeSxD2slHw0nnVpivpNZrO2L1JCVKKXHrs6q3zRRQxa8tEyQenyDLO2_CnYc_YqvEm6nxxpwu-farlaKMbj1L69MJ0UF_wAMMqKXGWAKv1TEm_SLkcqX7lyG8gKvmjF2CnIHslWtxCxHqj9WdXSN-iaEkodwfh1SAhnNry_fsHdS3kusRV0q53cocHTrjKui6pgG9Z-sH2EhSsRMuvO6XNCPUn73Usy8bV_D8"/>
+</div>
+</div>
+<div class="bg-rose-100 rounded-lg p-8 flex items-center shadow-lg">
+<div class="w-2/3">
+<p class="text-rose-600 text-lg">30% Chegirma</p>
+<h3 class="font-playfair text-3xl font-bold text-gray-800 mt-1 mb-3">Yengil, qulay, zamonaviy – aynan siz uchun!</h3>
+<button class="bg-rose-600 text-white py-2 px-5 rounded-full text-sm hover:bg-rose-700 transition duration-300">Shop Now</button>
+</div>
+<div class="w-1/3">
+<img alt="Woman in comfortable loungewear" class="rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkd7CX5smkzFp_cvX2uBm9RdcSZh0LWBRTOG5XORGFiuRfukPGfoncyhx7S1gJ3ieXD-u4cXncEewCoOEFcj4M-I6dMAxx02hP9bI-76VvTTIMmg_7HVFqwglSw-8-Z69ZNe7TNTF83apycptdsCZYnS1bMBRSdHclfTHhcWTWSzX4-GCgJGuFi4ApqpQurZXBI5j33Zi4jz07R224fhQsuNimj34BuMY0yLkwRmwOyQWRPnUlPnJVhPQheAc4ldTnHd-uimOyV8w"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16">
+    <div class="container mx-auto px-4">
+      <!-- Header and filter buttons -->
+      <h2 class="font-playfair text-4xl font-bold text-gray-800 text-center mb-4">Yangi kolleksiya</h2>
+      <div class="flex justify-center space-x-4 mb-10">
+        <button class="bg-pink-600 text-white py-2 px-6 rounded-full text-sm">Yangi</button>
+        <button class="text-gray-600 hover:text-pink-600 py-2 px-6 rounded-full text-sm">Eng ko‘p sotilgan</button>
+        <button class="text-gray-600 hover:text-pink-600 py-2 px-6 rounded-full text-sm">Maxsus</button>
+      </div>
+  
+    <!-- Products grid --> 
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+      <!-- Product card template repeated 10 times with example data -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Floral Midi Dress" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhZe3E6AtXsMtST65ue6TMofLKhPIBrD1zj1nZgLUpcE1Gfecjta8dRqRnce6U-Z2z_oPrP9asA-ashG2X4o3sI1Sz6zrQDppd-8thI6c8nVrohe6AP9RgSLCjPKv3NyrITKlRKh-BV7a5jIk149TfVACiBVW9r5_UK-mzx4_M95FsABgh35KjFkQI3Zcog9Cqa4PpR3HiscLIv7ccyhYD10x4wbXzYn6ZNtZDYSz6JURVnYCSpI_0cuEyKykMXGOLskt3-E7hJ_w"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">5% chegirma</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1" onclick="addToShoppingBag('Floral Midi Dress', 49.99)">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+          <script>
+            function addToShoppingBag(itemName, itemPrice) {
+                alert(`${itemName} has been added to your shopping bag for $${itemPrice.toFixed(2)}.`);
+                // Additional logic to update shopping bag can be added here
+            }
+          </script>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_half</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Floral Midi Dress</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$49.99</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$52.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <!-- Repeat 9 more times with varied info -->
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+        <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1" onclick="addToShoppingBag('Classic Denim Jacket', 75.00)">
+            <span class="material-icons">shopping_cart</span>
+        </button>
+        <script>
+            function addToShoppingBag(itemName, itemPrice) {
+                alert(`${itemName} has been added to your shopping bag for $${itemPrice.toFixed(2)}.`);
+                // Additional logic to update shopping bag can be added here
+            }
+        </script>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+        <div class="relative">
+        <img alt="Classic Denim Jacket" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA89fs6DQVkbYtvv2_dXIE48sDj246oz73twO3sjqSBATGUU9rVOZJhus2Gq0iUH5-mbd35hQ5Yap6rlbotrsfeDpBhRdE4yqMqebZrbAykUHVdGMUEOSAJjX22hqR0h2lxykHEe9xa_Y1nSau17WJwyGgQteM7n95KSDs8iH_gwK1oNrX3wT0LTx5eZncEk_V-UevIfldnSk0YdE6v7984LWGdTh7Rbo8OU_IZDk_mND8gEaJsWv2tYM301uM9CYVVedGArgzNntk"/>
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">8% OFF</span>
+        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">favorite_border</span>
+          </button>
+          <button class="text-white p-2 rounded-full bg-pink-600 hover:bg-pink-700 mx-1">
+            <span class="material-icons">shopping_cart</span>
+          </button>
+        </div>
+        </div>
+        <div class="p-4 text-center">
+        <div class="flex justify-center text-yellow-400 mb-1">
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star</span>
+          <span class="material-icons text-sm">star_border</span>
+        </div>
+        <h3 class="text-gray-800 font-medium text-md mb-1">Klassik Denim Kurtkasi</h3>
+        <p class="text-gray-600">
+          <span class="text-pink-600 font-semibold">$75.00</span>
+          <span class="text-gray-400 line-through text-sm ml-1">$81.50</span>
+        </p>
+        </div>
+      </div>
+
+    <!-- product cart -->
+  
+
+      <!-- Add more product cards as needed -->
+    </div>
+<div class="text-center mt-12">
+<button class="bg-pink-700 text-white py-3 px-8 rounded-full hover:bg-pink-800 transition duration-300 font-medium">View More Products</button>
+</div>
+</div>
+</section>
+<footer class="bg-gray-800 text-gray-300 py-12">
+<div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+
+    <!-- FOOTER --> 
+<h4 class="font-playfair text-xl text-white mb-4">Jamile Store</h4>
+<p class="text-sm">Sizning zamonaviy va arzon ayollar kiyimlari manzilingiz.</p>
+</div>
+<div>
+    <h5 class="text-lg font-semibold text-white mb-3">Do‘kon</h5>
+    <ul class="space-y-2 text-sm">
+    <li><a class="hover:text-pink-400" href="#">Yangi kelganlar</a></li>
+    <li><a class="hover:text-pink-400" href="#">Eng ko‘p sotilganlar</a></li>
+    <li><a class="hover:text-pink-400" href="#">Ko‘ylaklar</a></li>
+    <li><a class="hover:text-pink-400" href="#">Chegirma</a></li>
+    </ul>
+    </div>
+    <div>
+    <h5 class="text-lg font-semibold text-white mb-3">Mijozlarga xizmat</h5>
+    <ul class="space-y-2 text-sm">
+    <li><a class="hover:text-pink-400" href="#">Biz bilan bog‘lanish</a></li>
+    <li><a class="hover:text-pink-400" href="#">Yetkazib berish va qaytarish</a></li>
+    <li><a class="hover:text-pink-400" href="#">Tez-tez so‘raladigan savollar</a></li>
+    <li><a class="hover:text-pink-400" href="#">O‘lcham bo‘yicha qo‘llanma</a></li>
+    </ul>
+    </div>
+    <div>
+        
+  <h5 class="text-lg font-semibold text-white mb-3">Bog‘laning</h5>
+  <p class="text-sm mb-2">
+    Yangiliklar va maxsus takliflardan xabardor bo‘lish uchun obuna bo‘ling.
+  </p>
+  <div class="flex">
+    <input
+      class="bg-gray-700 text-white placeholder-gray-400 py-2 px-3 rounded-l-md text-sm focus:outline-none w-full"
+      placeholder="Elektron pochtangizni kiriting"
+      type="email"
+    />
+    <button
+      class="bg-pink-600 text-white py-2 px-4 rounded-r-md hover:bg-pink-700 text-sm"
+    >
+      Obuna bo‘lish
+    </button>
+  </div>
+
+  <div class="flex space-x-3 mt-4">
+    <a class="hover:text-pink-400" href="#">
+      <img
+        alt="Facebook icon"
+        class="w-6 h-6"
+        src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+      />
+    </a>
+    <a class="hover:text-pink-400" href="#">
+      <img
+        alt="Instagram icon"
+        class="w-6 h-6"
+        src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+      />
+    </a>
+    <a class="hover:text-pink-400" href="#">
+      <img
+        alt="Twitter icon"
+        class="w-6 h-6"
+        src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+      />
+    </a>
+  </div>
+</div>
+
+<div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm">
+  <p>© 2023 Jamile Store. Barcha huquqlar himoyalangan.</p>
+</div>
+
+</footer>
+</body>
+</html>
