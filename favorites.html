@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Favorites</title>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&display=swap"
+  />
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <style>
+    body {
+      font-family: 'Spline Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-[#181115]">
+  <header class="flex items-center justify-between px-10 py-3 border-b border-[#f4f0f3]">
+    <div class="flex items-center gap-8">
+      <div class="flex items-center gap-4 text-[#181115]">
+        <div class="size-4">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+        <h2 class="text-lg font-bold">Jamile Store</h2>
+      </div>
+      <div class="flex items-center gap-9">
+        <a href="#" class="text-sm">New Arrivals</a>
+        <a href="#" class="text-sm">Clothing</a>
+        <a href="#" class="text-sm">Shoes</a>
+        <a href="#" class="text-sm">Accessories</a>
+        <a href="#" class="text-sm">Sale</a>
+      </div>
+    </div>
+    <div class="flex gap-2">
+      <button class="h-10 bg-[#f4f0f3] text-[#181115] px-4 rounded-lg">Cart</button>
+    </div>
+  </header>
+
+  <div class="max-w-6xl mx-auto px-6 py-10">
+    <h1 class="text-3xl font-bold mb-8">Your Favorites</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2 space-y-6" id="favorites-list">
+        <!-- Favorite items will be dynamically inserted here -->
+      </div>
+      <div class="border p-6 rounded-lg bg-[#f9f6f8]">
+        <h2 class="text-xl font-bold mb-4">Order Summary</h2>
+        <div class="text-sm space-y-2">
+          <div class="flex justify-between">
+            <span>Subtotal</span>
+            <span>$<span id="subtotal">0.00</span></span>
+          </div>
+          <div class="flex justify-between">
+            <span>Shipping</span>
+            <span>$<span id="shipping">0.00</span></span>
+          </div>
+          <hr class="my-3 border-[#e5d9e0]" />
+          <div class="flex justify-between font-semibold text-base">
+            <span>Total</span>
+            <span>$<span id="total">0.00</span></span>
+          </div>
+        </div>
+        <button class="w-full mt-6 bg-[#181115] text-white py-3 rounded-lg font-semibold">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let favorites = [
+      {
+        id: 1,
+        name: "Classic White Shirt",
+        size: "M",
+        price: 29.99,
+        img: "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=80&q=80",
+      },
+      {
+        id: 2,
+        name: "Denim Jeans",
+        size: "L",
+        price: 49.99,
+        img: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=80&q=80",
+      },
+    ];
+
+    function renderFavorites() {
+      const favoritesList = document.getElementById("favorites-list");
+      favoritesList.innerHTML = "";
+
+      favorites.forEach((item) => {
+        const itemDiv = document.createElement("div");
+        itemDiv.className = "flex items-center border p-4 rounded-lg gap-4";
+        itemDiv.id = `favorite-${item.id}`;
+
+        itemDiv.innerHTML = `
+          <img src="${item.img}" alt="${item.name}" class="w-20 h-20 object-cover rounded-md" />
+          <div class="flex-1">
+            <h3 class="text-lg font-semibold">${item.name}</h3>
+            <p class="text-sm text-[#88637c]">Size: ${item.size}</p>
+          </div>
+          <div class="w-20 text-right font-bold">$${item.price.toFixed(2)}</div>
+        `;
+
+        favoritesList.appendChild(itemDiv);
+      });
+
+      updateSummary();
+    }
+
+    function updateSummary() {
+      const subtotal = favorites.reduce((acc, item) => acc + item.price, 0);
+      const shipping = subtotal > 0 ? 5.0 : 0;
+      const tax = subtotal * 0.045;
+      const total = subtotal + shipping + tax;
+
+      document.getElementById("subtotal").textContent = subtotal.toFixed(2);
+      document.getElementById("shipping").textContent = shipping.toFixed(2);
+      document.getElementById("total").textContent = total.toFixed(2);
+    }
+
+    renderFavorites();
+  </script>
+</body>
+</html>
